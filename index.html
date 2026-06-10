@@ -56,6 +56,16 @@
     .form-group select, .form-group input, .form-group textarea { background: #162135; border: 1px solid rgba(201,168,76,0.3); border-radius: 6px; padding: 10px 14px; color: #e8e0d0; font-size: 14px; font-family: Georgia, serif; }
     .form-group textarea { min-height: 100px; resize: vertical; }
     @media (max-width: 600px) { .steps { grid-template-columns: 1fr; } }
+    .role-section { max-width: 860px; margin: 0 auto; padding: 40px 40px 48px; }
+    .role-section h2 { font-size: 22px; font-weight: 700; color: #e8e0d0; margin-bottom: 10px; }
+    .role-note { font-size: 13px; color: #8a9bb0; font-family: Arial, sans-serif; margin-bottom: 28px; line-height: 1.6; }
+    .role-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .role-column { background: #162135; border-radius: 8px; padding: 28px 24px; }
+    .role-column h3 { font-size: 15px; font-weight: 700; color: #c9a84c; margin-bottom: 16px; }
+    .role-list { list-style: none; padding: 0; }
+    .role-list li { font-size: 13px; color: #8a9bb0; padding: 5px 0; font-family: Arial, sans-serif; line-height: 1.5; }
+    .role-list li::before { content: "— "; color: #c9a84c; }
+    @media (max-width: 600px) { .role-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -83,7 +93,7 @@
         <li>Alimony waivers</li>
         <li>Final decree preparation</li>
       </ul>
-      div>
+    </div>
     <div class="card">
       <div class="card-icon"></div>
       <h3>Real estate &amp; title</h3>
@@ -129,6 +139,33 @@
       <div class="step"><span class="step-num">2</span><p>I gather your information and begin preparing your documents accurately and thoroughly.</p></div>
       <div class="step"><span class="step-num">3</span><p>We meet (in person or remotely) to sign and notarize your documents.</p></div>
       <div class="step"><span class="step-num">4</span><p>I prepare your complete document package — organized, accurate, and ready for your attorney to review and file. You save hundreds in attorney hours.</p></div>
+    </div>
+  </section>
+  <hr class="divider" />
+  <section class="role-section">
+    <h2>How the process works</h2>
+    <p class="role-note">Most of my services follow this process. Some simpler services may not require attorney involvement at all.</p>
+    <div class="role-grid">
+      <div class="role-column">
+        <h3>My role</h3>
+        <ul class="role-list">
+          <li>Meet with the client</li>
+          <li>Collect all their information</li>
+          <li>Complete all the forms accurately</li>
+          <li>Prepare all documents ready to sign</li>
+          <li>Notarize signatures</li>
+          <li>Hand everything to the client packaged and organized</li>
+        </ul>
+      </div>
+      <div class="role-column">
+        <h3>Client's attorney</h3>
+        <ul class="role-list">
+          <li>Reviews what I prepared</li>
+          <li>Makes any changes needed</li>
+          <li>Files with the court</li>
+          <li>Takes legal responsibility</li>
+        </ul>
+      </div>
     </div>
   </section>
   <hr class="divider" />
