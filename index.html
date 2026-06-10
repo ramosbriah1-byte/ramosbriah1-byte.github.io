@@ -41,6 +41,21 @@
     .footer-disclaimer p { font-size: 11px; color: #4a5568; font-family: Arial, sans-serif; }
     .footer-disclaimer p a { color: #c9a84c; }
     @media (max-width: 600px) { .hero h1 { font-size: 42px; } .cards-grid { grid-template-columns: 1fr; } .stats { grid-template-columns: 1fr; } .cta-box { flex-direction: column; } }
+
+    .attorney-note { font-size: 11px; color: #c9a84c; font-family: Arial, sans-serif; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(201,168,76,0.2); line-height: 1.5; }
+    .how-it-works { max-width: 860px; margin: 0 auto; padding: 40px 40px 48px; }
+    .steps { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+    .step { background: #162135; border-radius: 8px; padding: 24px; display: flex; gap: 16px; align-items: flex-start; }
+    .step-num { font-size: 24px; font-weight: 700; color: #c9a84c; flex-shrink: 0; }
+    .step p { font-size: 13px; color: #8a9bb0; font-family: Arial, sans-serif; line-height: 1.6; }
+    .contact-section { max-width: 860px; margin: 0 auto; padding: 40px 40px 48px; }
+    .contact-section h2 { font-size: 22px; font-weight: 700; color: #e8e0d0; margin-bottom: 24px; }
+    .contact-form { display: flex; flex-direction: column; gap: 16px; max-width: 560px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group label { font-size: 12px; color: #8a9bb0; font-family: Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+    .form-group select, .form-group input, .form-group textarea { background: #162135; border: 1px solid rgba(201,168,76,0.3); border-radius: 6px; padding: 10px 14px; color: #e8e0d0; font-size: 14px; font-family: Georgia, serif; }
+    .form-group textarea { min-height: 100px; resize: vertical; }
+    @media (max-width: 600px) { .steps { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -68,6 +83,7 @@
         <li>Alimony waivers</li>
         <li>Final decree preparation</li>
       </ul>
+      <p class="attorney-note">All completed documents are provided to the client's attorney for review and filing. Attorney review is required.</p>
     </div>
     <div class="card">
       <div class="card-icon"></div>
@@ -78,6 +94,7 @@
         <li>Affidavits of heirship</li>
         <li>Title coordination</li>
       </ul>
+      <p class="attorney-note">All completed documents are provided to the client's attorney for review and filing. Attorney review is required.</p>
     </div>
     <div class="card">
       <div class="card-icon"></div>
@@ -88,6 +105,7 @@
         <li>Notices of non-suit</li>
         <li>Harris County e-filing</li>
       </ul>
+      <p class="attorney-note">All completed documents are provided to the client's attorney for review and filing. Attorney review is required.</p>
     </div>
     <div class="card">
       <h3>Notary services</h3>
@@ -97,6 +115,21 @@
         <li>Loan signings</li>
         <li>Same-day availability</li>
       </ul>
+      <p class="attorney-note">All completed documents are provided to the client's attorney for review and filing. Attorney review is required.</p>
+    </div>
+  </section>
+  <hr class="divider" />
+  <section class="intro">
+    <h2>How it works</h2>
+    <p>I do the paperwork, your attorney reviews and files. You get professional quality document preparation at a fraction of the cost. My fee covers completing all your forms accurately and notarizing your signatures. Your attorney then reviews, approves, and files — keeping everything fully legal and protected.</p>
+  </section>
+  <hr class="divider" />
+  <section class="how-it-works">
+    <div class="steps">
+      <div class="step"><span class="step-num">1</span><p>Tell me what documents you need — divorce, deed, affidavit, or other legal forms.</p></div>
+      <div class="step"><span class="step-num">2</span><p>I gather your information and begin preparing your documents accurately and thoroughly.</p></div>
+      <div class="step"><span class="step-num">3</span><p>We meet (in person or remotely) to sign and notarize your documents.</p></div>
+      <div class="step"><span class="step-num">4</span><p>I prepare your complete document package — organized, accurate, and ready for your attorney to review and file. You save hundreds in attorney hours.</p></div>
     </div>
   </section>
   <hr class="divider" />
@@ -128,7 +161,36 @@
     <span><span class="dot"></span> Northwest Houston, TX</span>
   </div>
   <div class="footer-disclaimer">
-    <p>Paralegal services are not the same as attorney representation. <a href="#">All legal decisions remain with the client.</a></p>
+    <p>Briah L. Ramos provides legal document preparation and notary services only. All documents must be reviewed and filed by a licensed Texas attorney of the client's choosing. This is not a law firm and no legal advice is provided.</p>
   </div>
+  <hr class="divider" />
+  <section class="contact-section">
+    <h2>Get in touch</h2>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="service-select">Service needed</label>
+        <select id="service-select" name="service">
+          <option value="document-prep-attorney">Document preparation for attorney review</option>
+          <option value="divorce">Divorce document services</option>
+          <option value="real-estate">Real estate &amp; title</option>
+          <option value="litigation">Litigation support</option>
+          <option value="notary">Notary services</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="contact-name">Name</label>
+        <input type="text" id="contact-name" name="name" placeholder="Your full name" />
+      </div>
+      <div class="form-group">
+        <label for="contact-email">Email</label>
+        <input type="email" id="contact-email" name="email" placeholder="Your email address" />
+      </div>
+      <div class="form-group">
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" placeholder="Describe your document needs"></textarea>
+      </div>
+      <button type="submit" class="cta-btn">Send message</button>
+    </form>
+  </section>
 </body>
 </html>
